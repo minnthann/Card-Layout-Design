@@ -14,9 +14,70 @@ body {
     font-family: serif;
     font-size: 14px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin: 2rem;
 }
+
+/* header */
+
+/* main  {
+    width: 90%;
+    margin: auto;
+    background-color: #f18585;
+    display: flex;
+} */
+
+.container {
+    /* background-color: #f18585; */
+    /* border: 2px solid #f185; */
+    box-shadow: 0px 2px 0px 3px;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-family:marker felt, fantasy;
+    font-size: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+    /* margin-left: 0 auto;
+    margin-right: 0 auto; */
+
+    &:hover {
+        transform: translateY(-4px);
+    
+    }
+}
+
+.nav-item:first-child {
+    margin-right: auto;
+    margin-left: 20px;
+    /* float: left;
+    margin: 0 auto; */
+}
+
+.nav-item {
+    list-style: none;
+    border-radius: 3px;
+    margin: 10px;
+    box-shadow: 0px 1px 1px 1px;
+    &:hover {
+        /* box-shadow: 3px 6px 20px #333; */
+        transform: translateY(-2px);
+    
+    }
+
+}
+
+.nav-item a {
+    color: var(--card-category-color);
+    text-decoration: none;
+}
+.nav-item a:hover {
+    color: var(--care-title-color);
+}
+
+
 /* mobi view */
 .card-container {
     /* border: 1px solid #000; */
@@ -136,5 +197,10 @@ color: #777;
     .car-img {
         width: 100%;
         height: 35%;
+    }
+}
+@media (max-width: 485px) {
+    .container {
+        flex-direction: column;
     }
 }
