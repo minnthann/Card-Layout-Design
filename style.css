@@ -1,0 +1,95 @@
+:root {
+    --primary-color:orange;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: serif;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin: 3rem;
+}
+/* mobi view */
+.card-container {
+    border: 1px solid #000;
+    /* max-width: 1200px; */
+    width: auto;
+    display: grid;
+    margin: 35px;
+    grid-template-columns: repeat(1, 1fr);
+    /* background-color: var(--primary-color); */
+    gap: 2rem;
+}
+
+.card {
+border: 1px solid #000;
+/* height: 200px; */
+
+
+}
+
+.card-link {
+
+}
+
+.card-img{
+    width: 100%;
+    height: 50%;
+
+}
+
+.card-body{
+
+}
+
+.card-category {
+
+}
+
+.card-title {
+
+}
+
+.card-description {
+
+}
+
+.card-post-info {
+
+}
+
+.card-avatar {
+    width: 70px;
+    height: 70px;
+    border-radius:50%;
+    object-fit: cover;
+
+}
+
+.card-author {
+
+}
+
+.card-date {
+
+}
+
+/* tablet viwe */
+@media  (min-width: 700px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+/* desktop viwe */
+@media (min-width: 1200px) {
+    .card-container {
+      grid-template-columns: repeat(3, 1fr);  
+
+    }
+}
