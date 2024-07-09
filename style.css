@@ -1,8 +1,8 @@
 :root {
     --primary-color:rgb(12, 12, 12);
     --card-border-redius: 7px;
-    --care-title-color:oragin;
-    --card-category-color:
+    --care-title-color: orange;
+    --card-category-color: seagreen;
 }
 
 * {
